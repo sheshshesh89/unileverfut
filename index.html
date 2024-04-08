@@ -1,12 +1,10 @@
-<!DOCTYPE html><!--  Last Published: Mon Mar 25 2024 01:17:13 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="65e7bdd7a004ae3b1b834a5a" data-wf-site="65e7bdd7a004ae3b1b834a4c" lang="es">
+<!DOCTYPE html><!--  Last Published: Mon Apr 08 2024 13:54:17 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="6613f68d51dc7d6f21bb9e78" data-wf-site="65e7bdd7a004ae3b1b834a4c" lang="es">
 <head>
   <meta charset="utf-8">
-  <title>Rexona Futuro Femenil - Proximamente</title>
-  <meta content="Rexona Futuro Femenil - Proximamente" property="og:title">
-  <meta content="https://uploads-ssl.webflow.com/65e7bdd7a004ae3b1b834a4c/65f21363fbcb6f963153111d_mg.jpg" property="og:image">
-  <meta content="Rexona Futuro Femenil - Proximamente" property="twitter:title">
-  <meta content="https://uploads-ssl.webflow.com/65e7bdd7a004ae3b1b834a4c/65f21363fbcb6f963153111d_mg.jpg" property="twitter:image">
+  <title>home</title>
+  <meta content="home" property="og:title">
+  <meta content="home" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/components.css" rel="stylesheet" type="text/css">
@@ -15,78 +13,11 @@
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
-<body class="body">
-  <section class="hero-stack">
-    <div class="container-2">
-      <div class="hero-wrapper-two">
-        <div class="divimg"><img src="images/Background.png" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 750px" srcset="images/Background-p-500.png 500w, images/Background-p-800.png 800w, images/Background.png 833w" alt="" class="hero-image shadow-two">
-          <div class="divlogo"><img src="images/Fututo-Femenil.png" loading="lazy" alt="" class="logo-fut"></div>
-        </div>
-        <h1 class="h1">¡Te esperamos!</h1>
-        <p class="margin-bottom-24px paragraph">Estamos preparando la cancha para un movimiento que cambiará el Fútbol Femenil en México.<br><br>Podrás registrarte el 1 de abril de 2024 para el silbatazo inicial, no olvides que tu participación tendrá un gran impacto en los sueños de niñas y jóvenes con una fuerte pasión por el fútbol.</p>
-        <div id="js-clock" class="js-clock">
-          <div class="box">
-            <div id="js-clock-days" class="clock-number">00</div>
-            <div class="clock-label">DÍAS</div>
-          </div>
-          <div class="box">
-            <div id="js-clock-hours" class="clock-number">00</div>
-            <div class="clock-label">HORAS</div>
-          </div>
-          <div class="box">
-            <div id="js-clock-minutes" class="clock-number">00</div>
-            <div class="clock-label">MINUTOS</div>
-          </div>
-          <div class="box">
-            <div id="js-clock-seconds" class="clock-number">00</div>
-            <div class="clock-label">SEGUNDOS</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<body>
+  <div class="w-embed">
+    <meta http-equiv="Refresh" content="0; url='https://unilever.rexonafuturofemenil.com.mx/'">
+  </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=65e7bdd7a004ae3b1b834a4c" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/futurofemenil.js" type="text/javascript"></script>
-  <script>
-(function () {
-    var deadline = '2024/04/08 00:00';
-    function pad(num, size) {
-        var s = "0" + num;
-        return s.substr(s.length - size);
-    }
-    // fixes "Date.parse(date)" on safari
-    function parseDate(date) {
-        const parsed = Date.parse(date);
-        if (!isNaN(parsed)) return parsed
-        return Date.parse(date.replace(/-/g, '/').replace(/[a-z]+/gi, ' '));
-    }
-    function getTimeRemaining(endtime) {
-        let total = parseDate(endtime) - Date.parse(new Date())
-        let seconds = Math.floor((total / 1000) % 60)
-        let minutes = Math.floor((total / 1000 / 60) % 60)
-        let hours = Math.floor((total / (1000 * 60 * 60)) % 24)
-        let days = Math.floor(total / (1000 * 60 * 60 * 24))
-        return { total, days, hours, minutes, seconds };
-    }
-    function clock(id, endtime) {
-        let days = document.getElementById(id + '-days')
-        let hours = document.getElementById(id + '-hours')
-        let minutes = document.getElementById(id + '-minutes')
-        let seconds = document.getElementById(id + '-seconds')
-        var timeinterval = setInterval(function () {
-            var time = getTimeRemaining(endtime);
-            if (time.total <= 0) {
-                clearInterval(timeinterval);
-            } else {
-                days.innerHTML = pad(time.days, 2);
-                hours.innerHTML = pad(time.hours, 2);
-                minutes.innerHTML = pad(time.minutes, 2);
-                seconds.innerHTML = pad(time.seconds, 2);
-            }
-        }, 1000);
-    }
-    clock('js-clock', deadline);
-})();
-</script>
 </body>
 </html>
